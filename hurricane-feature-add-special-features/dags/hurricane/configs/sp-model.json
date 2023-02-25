@@ -1,0 +1,19 @@
+{
+    "workflow_type"     : "model",
+    "dag_id"            : "Generate-SP-Model",
+    "datalake_client"   : "local",
+    "datalake_workdir"  : "/home/maiconbanni/Documentos/UFF/datalake/model/SP",
+    "retries"           : 5,
+    "owner"             : "Maicon Banni",
+    "email"             : ["maiconbanni@gmail.com"],
+    "postgresql_url"    : "postgresql://cdadmin@localhost:5432/cdbase",
+    "schema"            : "public",
+    "tablespace"        : "pg_default",
+    "places"            : [
+        {
+            "city"      : "Sao Paulo", 
+            "state"     : "Sao Paulo",
+            "country"   : "Brazil"
+        }
+    ]
+}
